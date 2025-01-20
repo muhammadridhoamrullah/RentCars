@@ -1,0 +1,122 @@
+[
+  {
+    "name": "Toyota Alphard",
+    "brand": "Toyota",
+    "price": 1500000,
+    "description": "Luxury MPV with premium features",
+    "year": 2023,
+    "transmission": "Automatic",
+    "imageUrl": "https://example.com/images/alphard.jpg",
+    "available": true,
+    "TypeId": 2,
+    "UserId": 1
+  },
+  {
+    "name": "Honda Civic Type R",
+    "brand": "Honda",
+    "price": 2000000,
+    "description": "Sports car with racing DNA",
+    "year": 2023,
+    "transmission": "Manual",
+    "imageUrl": "https://example.com/images/civic.jpg",
+    "available": true,
+    "TypeId": 4,
+    "UserId": 1
+  },
+  {
+    "name": "Toyota Fortuner",
+    "brand": "Toyota",
+    "price": 1800000,
+    "description": "Rugged SUV for adventures",
+    "year": 2022,
+    "transmission": "Automatic",
+    "imageUrl": "https://example.com/images/fortuner.jpg",
+    "available": true,
+    "TypeId": 1,
+    "UserId": 2
+  },
+  {
+    "name": "Honda Jazz",
+    "brand": "Honda",
+    "price": 800000,
+    "description": "Compact city car with great fuel efficiency",
+    "year": 2021,
+    "transmission": "Automatic",
+    "imageUrl": "https://example.com/images/jazz.jpg",
+    "available": true,
+    "TypeId": 3,
+    "UserId": 3
+  },
+  {
+    "name": "Ford Ranger",
+    "brand": "Ford",
+    "price": 1500000,
+    "description": "Durable and powerful pickup truck for work and off-road",
+    "year": 2022,
+    "transmission": "Manual",
+    "imageUrl": "https://example.com/images/ranger.jpg",
+    "available": true,
+    "TypeId": 8,
+    "UserId": 2
+  },
+  {
+    "name": "BMW X5",
+    "brand": "BMW",
+    "price": 2500000,
+    "description": "Luxury SUV with advanced features and performance",
+    "year": 2023,
+    "transmission": "Automatic",
+    "imageUrl": "https://example.com/images/x5.jpg",
+    "available": true,
+    "TypeId": 1,
+    "UserId": 1
+  },
+  {
+    "name": "Mercedes-Benz E-Class",
+    "brand": "Mercedes-Benz",
+    "price": 3000000,
+    "description": "Premium sedan with superior comfort and technology",
+    "year": 2023,
+    "transmission": "Automatic",
+    "imageUrl": "https://example.com/images/e-class.jpg",
+    "available": true,
+    "TypeId": 3,
+    "UserId": 1
+  },
+  {
+    "name": "Chevrolet Camaro",
+    "brand": "Chevrolet",
+    "price": 2200000,
+    "description": "Iconic American muscle car with powerful engine",
+    "year": 2022,
+    "transmission": "Manual",
+    "imageUrl": "https://example.com/images/camaro.jpg",
+    "available": true,
+    "TypeId": 4,
+    "UserId": 2
+  },
+  {
+    "name": "Volkswagen Golf",
+    "brand": "Volkswagen",
+    "price": 1000000,
+    "description": "Compact hatchback for city driving and great fuel economy",
+    "year": 2021,
+    "transmission": "Automatic",
+    "imageUrl": "https://example.com/images/golf.jpg",
+    "available": true,
+    "TypeId": 5,
+    "UserId": 3
+  },
+  {
+    "name": "Nissan Navara",
+    "brand": "Nissan",
+    "price": 1700000,
+    "description": "Tough pickup truck for off-road adventures",
+    "year": 2022,
+    "transmission": "Manual",
+    "imageUrl": "https://example.com/images/navara.jpg",
+    "available": true,
+    "TypeId": 8,
+    "UserId": 3
+  }
+]

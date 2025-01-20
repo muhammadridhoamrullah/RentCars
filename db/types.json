@@ -1,0 +1,13 @@
+[
+  { "name": "SUV" },
+  { "name": "MPV" },
+  { "name": "Sedan" },
+  { "name": "Sports" },
+  { "name": "Hatchback" },
+  { "name": "Coupe" },
+  { "name": "Convertible" },
+  { "name": "Pickup Truck" },
+  { "name": "Crossover" },
+  { "name": "Van" },
+  { "name": "Luxury" }
+]
