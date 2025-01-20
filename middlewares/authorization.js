@@ -7,10 +7,8 @@ async function authorization(req, res, next) {
     const find = await Car.findByPk(id, {
       include: User,
     });
-    console.log(find.User, "ini find author");
 
     const findUser = await User.findByPk(req.userId);
-    console.log(findUser, "ini find user di author");
 
     if (!find) {
       throw { name: "DATA_NOT_FOUND" };
@@ -23,8 +21,6 @@ async function authorization(req, res, next) {
     ) {
       next();
     } else {
-      console.log("kena");
-
       throw { name: "FORBIDDEN" };
     }
   } catch (error) {

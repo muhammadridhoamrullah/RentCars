@@ -205,6 +205,72 @@ class Controller {
       next(error);
     }
   }
+
+  static async deleteCar(req, res, next) {
+    try {
+      const { id } = req.params;
+
+      const findCar = await Car.findByPk(id);
+
+      if (!findCar) {
+        throw { name: "DATA_NOT_FOUND" };
+      }
+
+      const deletedCar = await Car.destroy({
+        where: {
+          id,
+        },
+      });
+
+      res.status(200).json({
+        message: "Car has been deleted",
+      });
+    } catch (error) {
+      next(error);
+    }
+  }
+
+  static async getPubCars(req, res, next) {
+    try {
+      const allCars = await Car.findAll({
+        include: [
+          Type,
+          {
+            model: User,
+            attributes: {
+              exclude: ["password"],
+            },
+          },
+        ],
+      });
+
+      res.status(200).json(allCars);
+    } catch (error) {
+      next(error);
+    }
+  }
+
+  static async getPubCarById(req, res, next) {
+    try {
+      const { id } = req.params;
+
+      const car = await Car.findByPk(id, {
+        include: [
+          Type,
+          {
+            model: User,
+            attributes: {
+              exclude: ["password"],
+            },
+          },
+        ],
+      });
+
+      res.status(200).json(car);
+    } catch (error) {
+      next(error);
+    }
+  }
 }
 module.exports = {
   Controller,

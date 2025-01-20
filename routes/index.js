@@ -1,10 +1,19 @@
 const { Controller } = require("../controllers/controller");
 const { authentication } = require("../middlewares/authentication");
 const { authorization } = require("../middlewares/authorization");
+const { errorHandler } = require("../middlewares/errorHandler");
 
 const router = require("express").Router();
 
 // List of available endpoints:​
+
+// Public routes (no auth needed):
+
+// GET /pub/cars
+// GET /pub/cars/:id
+
+router.get("/pub/cars", Controller.getPubCars);
+router.get("/pub/cars/:id", Controller.getPubCarById);
 
 // POST /login
 
@@ -33,15 +42,9 @@ router.post("/types", Controller.addType);
 // DELETE /cars/:id
 
 router.put("/cars/:id", authorization, Controller.updateCar);
-// router.delete("/cars/:id", Controller.deleteCar);
+router.delete("/cars/:id", authorization, Controller.deleteCar);
 
-// Public routes (no auth needed):
-
-// GET /pub/cars
-// GET /pub/cars/:id
-
-// router.get("/pub/cars", Controller.getPubCars);
-// router.get("/pub/cars/:id", Controller.getPubCarById);
+router.use(errorHandler);
 
 module.exports = {
   router,

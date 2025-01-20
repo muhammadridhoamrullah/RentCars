@@ -5,7 +5,7 @@ async function authentication(req, res, next) {
     const { authorization } = req.headers;
 
     if (!authorization) {
-      throw { name: "Unauthorized" };
+      throw { name: "UNAUTHORIZED" };
     }
 
     const token = authorization.split(" ")[1];
@@ -15,7 +15,7 @@ async function authentication(req, res, next) {
     const findUser = await User.findByPk(decoded.id);
 
     if (!findUser) {
-      throw { name: "Unauthorized" };
+      throw { name: "UNAUTHORIZED" };
     }
 
     req.userId = findUser.id;
