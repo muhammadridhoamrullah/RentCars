@@ -39,6 +39,7 @@ router.post("/types", Controller.addType);
 // And routes below need authorization
 
 // PUT /cars/:id
+
 // DELETE /cars/:id
 
 router.put("/cars/:id", authorization, Controller.updateCar);
